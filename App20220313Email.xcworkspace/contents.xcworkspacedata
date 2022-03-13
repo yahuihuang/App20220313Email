@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:ipa-App20220313Email"
+      name = "ipa-App20220313Email">
+      <FileRef
+         location = "group:Packaging.log">
+      </FileRef>
+      <FileRef
+         location = "group:App20220313Email.ipa">
+      </FileRef>
+      <FileRef
+         location = "group:ExportOptions.plist">
+      </FileRef>
+      <FileRef
+         location = "group:DistributionSummary.plist">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:App20220313Email.xcodeproj">
    </FileRef>
