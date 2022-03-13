@@ -11,6 +11,8 @@ import Firebase
 class ViewController: UIViewController {
 
     @IBOutlet weak var statusText: UITextView!
+    @IBOutlet weak var MyAccount: UITextField!
+    @IBOutlet weak var MyPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,5 +42,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func loginAction(_ sender: Any) {
+        let theAccount = MyAccount.text ?? ""
+        let password1 = MyPassword.text ?? ""
+        
+        //省略檢查
+        
+        Auth.auth().signIn(withEmail: theAccount, password: password1, completion: nil)
+    }
 }
 
