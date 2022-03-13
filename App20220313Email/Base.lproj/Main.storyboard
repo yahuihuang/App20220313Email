@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-xT-Eel">
-                                <rect key="frame" x="80" y="288" width="254" height="40"/>
+                                <rect key="frame" x="80" y="338" width="254" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ayn-Gy-UR2"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84t-Ja-c59">
-                                <rect key="frame" x="80" y="348" width="254" height="40"/>
+                                <rect key="frame" x="80" y="398" width="254" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cYX-DW-WZe"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OLh-9j-hLY">
-                                <rect key="frame" x="20" y="408" width="374" height="414"/>
+                                <rect key="frame" x="20" y="458" width="374" height="364"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -102,12 +102,30 @@
                                     <action selector="forgetPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVO-b2-fRe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-uC-7FO">
+                                <rect key="frame" x="264" y="266" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="H82-Oy-l0q"/>
+                                    <constraint firstAttribute="height" constant="40" id="d7U-Lv-oeX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="檢查EMAIL" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                        <color key="strokeColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkEmailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzo-pv-dGV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="hmO-xT-Eel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="4tZ-Jy-g6O"/>
+                            <constraint firstItem="hmO-xT-Eel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="4tZ-Jy-g6O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PGF-gM-m9E" secondAttribute="trailing" constant="30" id="71Z-nX-cxJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SCt-uC-7FO" secondAttribute="trailing" constant="30" id="7Ti-yz-fE1"/>
                             <constraint firstItem="iV8-q2-rfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8DB-BC-13i"/>
                             <constraint firstItem="xKR-1K-kRd" firstAttribute="top" secondItem="qkA-7J-60Y" secondAttribute="bottom" constant="8" symbolic="YES" id="CUJ-LG-Crr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iV8-q2-rfL" secondAttribute="trailing" constant="30" id="Eer-gj-TYg"/>
@@ -118,6 +136,7 @@
                             <constraint firstItem="OLh-9j-hLY" firstAttribute="top" secondItem="84t-Ja-c59" secondAttribute="bottom" constant="20" id="Qe6-oF-uN0"/>
                             <constraint firstItem="xKR-1K-kRd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Uc7-uO-Mgw"/>
                             <constraint firstItem="84t-Ja-c59" firstAttribute="top" secondItem="hmO-xT-Eel" secondAttribute="bottom" constant="20" id="WU0-RI-Ijc"/>
+                            <constraint firstItem="SCt-uC-7FO" firstAttribute="top" secondItem="PGF-gM-m9E" secondAttribute="bottom" constant="10" id="bGc-Mf-JxT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkA-7J-60Y" secondAttribute="trailing" constant="30" id="c9g-Mg-64i"/>
                             <constraint firstItem="qkA-7J-60Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dy3-rd-xfB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLh-9j-hLY" secondAttribute="trailing" constant="20" id="fpa-Wb-dVb"/>

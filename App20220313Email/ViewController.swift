@@ -61,5 +61,16 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func checkEmailAction(_ sender: Any) {
+//        let theAccount = MyAccount.text ?? ""
+        if let user = Auth.auth().currentUser {
+            user.sendEmailVerification { error in
+                if error != nil {
+                    self.showMessage(error?.localizedDescription ?? "")
+                }
+            }
+        }
+    }
 }
 
