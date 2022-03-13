@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B1091EBD2349FDA6ADC15D8 /* Pods_App20220313Email.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8DF30C5A994F65B131E23 /* Pods_App20220313Email.framework */; };
+		65448F1B27DE317300153BB7 /* App20220313Email.png in Resources */ = {isa = PBXBuildFile; fileRef = 65448F1A27DE317300153BB7 /* App20220313Email.png */; };
 		65C4BF6C27DDC01F009C9B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */; };
 		65C4BF6E27DDC01F009C9B42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF6D27DDC01F009C9B42 /* SceneDelegate.swift */; };
 		65C4BF7027DDC01F009C9B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF6F27DDC01F009C9B42 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		3D4DEA969A283AAFF92E4D34 /* Pods-App20220313Email.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App20220313Email.release.xcconfig"; path = "Target Support Files/Pods-App20220313Email/Pods-App20220313Email.release.xcconfig"; sourceTree = "<group>"; };
+		65448F1927DE316C00153BB7 /* App20220313Email.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = App20220313Email.ipa; sourceTree = SOURCE_ROOT; };
+		65448F1A27DE317300153BB7 /* App20220313Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App20220313Email.png; sourceTree = SOURCE_ROOT; };
 		65C4BF6827DDC01F009C9B42 /* App20220313Email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App20220313Email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65C4BF6D27DDC01F009C9B42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 		65C4BF6A27DDC01F009C9B42 /* App20220313Email */ = {
 			isa = PBXGroup;
 			children = (
+				65448F1927DE316C00153BB7 /* App20220313Email.ipa */,
+				65448F1A27DE317300153BB7 /* App20220313Email.png */,
 				65C4BF7F27DDC12B009C9B42 /* GoogleService-Info.plist */,
 				65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */,
 				65C4BF6D27DDC01F009C9B42 /* SceneDelegate.swift */,
@@ -164,6 +169,7 @@
 				65C4BF7827DDC022009C9B42 /* LaunchScreen.storyboard in Resources */,
 				65C4BF8027DDC12B009C9B42 /* GoogleService-Info.plist in Resources */,
 				65C4BF7527DDC022009C9B42 /* Assets.xcassets in Resources */,
+				65448F1B27DE317300153BB7 /* App20220313Email.png in Resources */,
 				65C4BF7327DDC01F009C9B42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
