@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5B1091EBD2349FDA6ADC15D8 /* Pods_App20220313Email.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8DF30C5A994F65B131E23 /* Pods_App20220313Email.framework */; };
 		65448F1B27DE317300153BB7 /* App20220313Email.png in Resources */ = {isa = PBXBuildFile; fileRef = 65448F1A27DE317300153BB7 /* App20220313Email.png */; };
-		65448F1D27DE359C00153BB7 /* AdHoc.html in Resources */ = {isa = PBXBuildFile; fileRef = 65448F1C27DE359C00153BB7 /* AdHoc.html */; };
 		65448F1F27DE35E100153BB7 /* manifest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65448F1E27DE35E100153BB7 /* manifest.plist */; };
 		65C4BF6C27DDC01F009C9B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */; };
 		65C4BF6E27DDC01F009C9B42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF6D27DDC01F009C9B42 /* SceneDelegate.swift */; };
@@ -25,7 +24,6 @@
 		3D4DEA969A283AAFF92E4D34 /* Pods-App20220313Email.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App20220313Email.release.xcconfig"; path = "Target Support Files/Pods-App20220313Email/Pods-App20220313Email.release.xcconfig"; sourceTree = "<group>"; };
 		65448F1927DE316C00153BB7 /* App20220313Email.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = App20220313Email.ipa; sourceTree = SOURCE_ROOT; };
 		65448F1A27DE317300153BB7 /* App20220313Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App20220313Email.png; sourceTree = SOURCE_ROOT; };
-		65448F1C27DE359C00153BB7 /* AdHoc.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AdHoc.html; sourceTree = "<group>"; };
 		65448F1E27DE35E100153BB7 /* manifest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manifest.plist; sourceTree = "<group>"; };
 		65C4BF6827DDC01F009C9B42 /* App20220313Email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App20220313Email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				65C4BF8127DDC994009C9B42 /* CreateAccountViewController.swift */,
 				65C4BF7127DDC01F009C9B42 /* Main.storyboard */,
 				65C4BF7427DDC022009C9B42 /* Assets.xcassets */,
-				65448F1C27DE359C00153BB7 /* AdHoc.html */,
 				65448F1E27DE35E100153BB7 /* manifest.plist */,
 				65C4BF7627DDC022009C9B42 /* LaunchScreen.storyboard */,
 				65C4BF7927DDC022009C9B42 /* Info.plist */,
@@ -177,7 +174,6 @@
 				65C4BF8027DDC12B009C9B42 /* GoogleService-Info.plist in Resources */,
 				65C4BF7527DDC022009C9B42 /* Assets.xcassets in Resources */,
 				65448F1B27DE317300153BB7 /* App20220313Email.png in Resources */,
-				65448F1D27DE359C00153BB7 /* AdHoc.html in Resources */,
 				65C4BF7327DDC01F009C9B42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
