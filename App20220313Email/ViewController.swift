@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         }
     }
 
-
+    @IBAction func logoutAction(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            print("登出成功")
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
 }
 
