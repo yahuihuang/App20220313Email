@@ -39,26 +39,40 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="登出">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.96763640640000004" green="0.65362471339999995" blue="0.2846366763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pB9-nX-uZ8"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OLh-9j-hLY">
+                                <rect key="frame" x="20" y="238" width="374" height="584"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="hmO-xT-Eel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="4tZ-Jy-g6O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OLh-9j-hLY" secondAttribute="bottom" constant="40" id="Fts-8s-aac"/>
                             <constraint firstItem="hmO-xT-Eel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="KXW-rc-7jv"/>
+                            <constraint firstItem="OLh-9j-hLY" firstAttribute="top" secondItem="84t-Ja-c59" secondAttribute="bottom" constant="20" id="Qe6-oF-uN0"/>
                             <constraint firstItem="84t-Ja-c59" firstAttribute="top" secondItem="hmO-xT-Eel" secondAttribute="bottom" constant="20" id="WU0-RI-Ijc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLh-9j-hLY" secondAttribute="trailing" constant="20" id="fpa-Wb-dVb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="84t-Ja-c59" secondAttribute="trailing" constant="80" id="m8P-UQ-D7g"/>
                             <constraint firstItem="84t-Ja-c59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="tva-lD-cgs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmO-xT-Eel" secondAttribute="trailing" constant="80" id="urh-zE-tLf"/>
+                            <constraint firstItem="OLh-9j-hLY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yCo-4Y-cB3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b7N-xF-5mI"/>
+                    <connections>
+                        <outlet property="statusText" destination="OLh-9j-hLY" id="W7v-xx-8qN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,6 +174,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
