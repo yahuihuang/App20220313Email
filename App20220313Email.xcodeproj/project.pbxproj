@@ -115,6 +115,8 @@
 			dependencies = (
 			);
 			name = App20220313Email;
+			packageProductDependencies = (
+			);
 			productName = App20220313Email;
 			productReference = 65C4BF6827DDC01F009C9B42 /* App20220313Email.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +145,8 @@
 				Base,
 			);
 			mainGroup = 65C4BF5F27DDC01F009C9B42;
+			packageReferences = (
+			);
 			productRefGroup = 65C4BF6927DDC01F009C9B42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
