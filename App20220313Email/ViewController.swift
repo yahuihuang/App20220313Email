@@ -50,5 +50,16 @@ class ViewController: UIViewController {
         
         Auth.auth().signIn(withEmail: theAccount, password: password1, completion: nil)
     }
+    
+    @IBAction func forgetPasswordAction(_ sender: Any) {
+        let theAccount = MyAccount.text ?? ""
+        Auth.auth().sendPasswordReset(withEmail: theAccount) { error in
+            if let error = error{
+                self.showMessage(error.localizedDescription)
+            }else{
+                self.showMessage("請查看你的 Email 重置密碼")
+            }
+        }
+    }
 }
 

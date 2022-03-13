@@ -70,7 +70,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKR-1K-kRd">
-                                <rect key="frame" x="264" y="214" width="120" height="40"/>
+                                <rect key="frame" x="30" y="214" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AtQ-Iu-LkS"/>
                                     <constraint firstAttribute="width" constant="120" id="aC3-S0-Teb"/>
@@ -86,11 +86,28 @@
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsO-ND-Ycv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGF-gM-m9E">
+                                <rect key="frame" x="264" y="216" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="cCD-ay-DAb"/>
+                                    <constraint firstAttribute="height" constant="40" id="vDD-d9-uDb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="忘記密碼">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgetPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVO-b2-fRe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="hmO-xT-Eel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="4tZ-Jy-g6O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PGF-gM-m9E" secondAttribute="trailing" constant="30" id="71Z-nX-cxJ"/>
                             <constraint firstItem="iV8-q2-rfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8DB-BC-13i"/>
                             <constraint firstItem="xKR-1K-kRd" firstAttribute="top" secondItem="qkA-7J-60Y" secondAttribute="bottom" constant="8" symbolic="YES" id="CUJ-LG-Crr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iV8-q2-rfL" secondAttribute="trailing" constant="30" id="Eer-gj-TYg"/>
@@ -99,15 +116,16 @@
                             <constraint firstItem="hmO-xT-Eel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="KXW-rc-7jv"/>
                             <constraint firstItem="qkA-7J-60Y" firstAttribute="top" secondItem="iV8-q2-rfL" secondAttribute="bottom" constant="8" id="Q3L-3E-YHh"/>
                             <constraint firstItem="OLh-9j-hLY" firstAttribute="top" secondItem="84t-Ja-c59" secondAttribute="bottom" constant="20" id="Qe6-oF-uN0"/>
+                            <constraint firstItem="xKR-1K-kRd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Uc7-uO-Mgw"/>
                             <constraint firstItem="84t-Ja-c59" firstAttribute="top" secondItem="hmO-xT-Eel" secondAttribute="bottom" constant="20" id="WU0-RI-Ijc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkA-7J-60Y" secondAttribute="trailing" constant="30" id="c9g-Mg-64i"/>
                             <constraint firstItem="qkA-7J-60Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dy3-rd-xfB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLh-9j-hLY" secondAttribute="trailing" constant="20" id="fpa-Wb-dVb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="84t-Ja-c59" secondAttribute="trailing" constant="80" id="m8P-UQ-D7g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xKR-1K-kRd" secondAttribute="trailing" constant="30" id="r6P-Ol-Efw"/>
                             <constraint firstItem="84t-Ja-c59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="tva-lD-cgs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmO-xT-Eel" secondAttribute="trailing" constant="80" id="urh-zE-tLf"/>
                             <constraint firstItem="OLh-9j-hLY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yCo-4Y-cB3"/>
+                            <constraint firstItem="PGF-gM-m9E" firstAttribute="top" secondItem="qkA-7J-60Y" secondAttribute="bottom" constant="10" id="ycj-pL-bVr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b7N-xF-5mI"/>
@@ -228,6 +246,9 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
