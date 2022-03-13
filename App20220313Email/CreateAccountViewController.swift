@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController {
 
@@ -22,12 +23,36 @@ class CreateAccountViewController: UIViewController {
 
     @IBAction func createAccount(_ sender: Any) {
         let theAccount = MyAccount.text ?? ""
+        let pwd1 = MyPassword.text ?? ""
+        let pwd2 = MyPassword2.text ?? ""
+        
         if validateEmail(theAccount) == false{
             print("Email 格式不對")
             showMessage("Email 格式不對")
             return
-        }else{
+        } else {
             print("格式對了")
+        }
+        
+        if pwd1.count < 6 {
+            print("密碼至少要6碼")
+            showMessage("密碼至少要6碼")
+            return
+        }
+        
+        if pwd1 != pwd2 {
+            print("2次輸入的密碼需一致")
+            showMessage("2次輸入的密碼需一致")
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: theAccount, password: pwd1) { result, error in
+            if let error = error {
+                print("登入失敗: \(error.localizedDescription)")
+                self.showMessage("error: \(error.localizedDescription)")
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
         }
     }
 

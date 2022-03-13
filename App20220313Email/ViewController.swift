@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if let user = user {
+                print("登入id\(user.uid)")
+            } else {
+                print("尚未登入")
+            }
+        }
     }
 
 
