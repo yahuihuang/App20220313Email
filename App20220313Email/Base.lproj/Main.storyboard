@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-13.043478260869566" y="53.571428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="CNT-aV-fgH">
             <objects>
-                <viewController id="nXt-AZ-4jz" sceneMemberID="viewController">
+                <viewController id="nXt-AZ-4jz" customClass="CreateAccountViewController" customModule="App20220313Email" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gEQ-BM-ogn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,9 @@
                                         <color key="backgroundColor" red="1" green="0.91940291090000004" blue="0.1069808545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="createAccount:" destination="nXt-AZ-4jz" eventType="touchUpInside" id="gtd-NS-NcZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1iC-e2-1bX"/>
@@ -127,6 +130,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uBV-mp-82d"/>
+                    <connections>
+                        <outlet property="MyAccount" destination="GIx-EB-V0e" id="Xuq-uy-aBL"/>
+                        <outlet property="MyPassword" destination="BbC-MO-hsN" id="uZe-d6-kSG"/>
+                        <outlet property="MyPassword2" destination="EzF-WL-1xR" id="IqU-Ec-eYq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Xf-Xy-yKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

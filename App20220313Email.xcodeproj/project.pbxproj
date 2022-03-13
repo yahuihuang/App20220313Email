@@ -15,6 +15,7 @@
 		65C4BF7527DDC022009C9B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C4BF7427DDC022009C9B42 /* Assets.xcassets */; };
 		65C4BF7827DDC022009C9B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C4BF7627DDC022009C9B42 /* LaunchScreen.storyboard */; };
 		65C4BF8027DDC12B009C9B42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65C4BF7F27DDC12B009C9B42 /* GoogleService-Info.plist */; };
+		65C4BF8227DDC994009C9B42 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4BF8127DDC994009C9B42 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		65C4BF7727DDC022009C9B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65C4BF7927DDC022009C9B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C4BF7F27DDC12B009C9B42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65C4BF8127DDC994009C9B42 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		7FC8DF30C5A994F65B131E23 /* Pods_App20220313Email.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App20220313Email.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		878770FC184546BB0CE059C4 /* Pods-App20220313Email.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App20220313Email.debug.xcconfig"; path = "Target Support Files/Pods-App20220313Email/Pods-App20220313Email.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				65C4BF6B27DDC01F009C9B42 /* AppDelegate.swift */,
 				65C4BF6D27DDC01F009C9B42 /* SceneDelegate.swift */,
 				65C4BF6F27DDC01F009C9B42 /* ViewController.swift */,
+				65C4BF8127DDC994009C9B42 /* CreateAccountViewController.swift */,
 				65C4BF7127DDC01F009C9B42 /* Main.storyboard */,
 				65C4BF7427DDC022009C9B42 /* Assets.xcassets */,
 				65C4BF7627DDC022009C9B42 /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C4BF8227DDC994009C9B42 /* CreateAccountViewController.swift in Sources */,
 				65C4BF7027DDC01F009C9B42 /* ViewController.swift in Sources */,
 				65C4BF6C27DDC01F009C9B42 /* AppDelegate.swift in Sources */,
 				65C4BF6E27DDC01F009C9B42 /* SceneDelegate.swift in Sources */,
